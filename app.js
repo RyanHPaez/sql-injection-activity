@@ -15,7 +15,7 @@ const db = new sqlite3.Database(':memory:');
 db.serialize(function () {
     db.run("CREATE TABLE user (username TEXT, password TEXT, title TEXT)");
     db.run("INSERT INTO user VALUES ('user', 'password', 'Administrator')");
-    //db.run("INSERT INTO user VALUES ('user2', 'password2', 'Some Other User')");
+    
 });
 
 
